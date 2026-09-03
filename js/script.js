@@ -346,105 +346,105 @@ const screenshotsData = [
         id: "genshin-impact",
         title: "Genshin Impact",
         tag: "Regularly Played",
-        screenshot: "assets/game screenshots/Genshin Impact Screenshot 2026.03.11 - 19.17.24.68.png",
+        screenshot: "assets/game screenshots/Genshin Impact Screenshot 2026.03.11 - 19.17.24.68.webp",
         description: "Open-world elemental exploration and combat mechanics across Teyvat."
     },
     {
         id: "god-of-war",
         title: "God of War",
         tag: "Action-Adventure",
-        screenshot: "assets/game screenshots/God of War Ragnarok ScreenShot-2025-6-2_22-9-58.png",
+        screenshot: "assets/game screenshots/God of War Ragnarok ScreenShot-2025-6-2_22-9-58.webp",
         description: "Epic Norse mythological combat and visceral narrative journey."
     },
     {
         id: "resident-evil",
         title: "Resident Evil",
         tag: "Survival Horror",
-        screenshot: "assets/game screenshots/Resident Evil Requiem Screenshot 2026.05.19 - 16.17.54.17.png",
+        screenshot: "assets/game screenshots/Resident Evil Requiem Screenshot 2026.05.19 - 16.17.54.17.webp",
         description: "Gothic survival horror tension, resource scarcity, and chilling atmosphere."
     },
     {
         id: "stellar-blade",
         title: "Stellar Blade",
         tag: "Fast-Paced Action",
-        screenshot: "assets/game screenshots/Stellar Blade Screenshot 2025.07.27 - 02.29.30.89.png",
+        screenshot: "assets/game screenshots/Stellar Blade Screenshot 2025.07.27 - 02.29.30.89.webp",
         description: "High-speed parry combat across overgrown post-apocalyptic Earth ruins."
     },
     {
         id: "control",
         title: "Control",
         tag: "Supernatural Action",
-        screenshot: "assets/game screenshots/Control Screenshot 2025.04.27 - 00.47.35.39.png",
+        screenshot: "assets/game screenshots/Control Screenshot 2025.04.27 - 00.47.35.39.webp",
         description: "Telekinetic abilities and brutalist architectural mystery in the Oldest House."
     },
     {
         id: "silent-hill",
         title: "Silent Hill f",
         tag: "Psychological Horror",
-        screenshot: "assets/game screenshots/SILENT HILL f Screenshot 2025.10.06 - 16.11.32.65.png",
+        screenshot: "assets/game screenshots/SILENT HILL f Screenshot 2025.10.06 - 16.11.32.65.webp",
         description: "Eerie psychological horror set in 1960s Japan with beautiful yet terrifying floral rot."
     },
     {
         id: "the-last-of-us",
         title: "The Last of Us Part I",
         tag: "Post-Pandemic Narrative",
-        screenshot: "assets/game screenshots/The Last of Us Part I Screenshot 2026.01.21 - 16.46.40.96.png",
+        screenshot: "assets/game screenshots/The Last of Us Part I Screenshot 2026.01.21 - 16.46.40.96.webp",
         description: "Joel and Ellie's visceral journey across reclaimed American landscapes."
     },
     {
         id: "a-plague-tale",
         title: "A Plague Tale: Requiem",
         tag: "Narrative Adventure",
-        screenshot: "assets/game screenshots/A Plague Tale  Requiem Screenshot 2025.03.08 - 22.26.19.10.png",
+        screenshot: "assets/game screenshots/A Plague Tale  Requiem Screenshot 2025.03.08 - 22.26.19.10.webp",
         description: "Amicia and Hugo's emotional journey through atmospheric medieval France."
     },
     {
         id: "pragmata",
         title: "Pragmata",
         tag: "Sci-Fi Adventure",
-        screenshot: "assets/game screenshots/Pragmata Screenshot 2026.05.02 - 21.19.33.32.png",
+        screenshot: "assets/game screenshots/Pragmata Screenshot 2026.05.02 - 21.19.33.32.webp",
         description: "Lunar dystopian sci-fi mystery with futuristic gravity and cybernetics."
     },
     {
         id: "black-myth-wukong",
         title: "Black Myth: Wukong",
         tag: "Action RPG",
-        screenshot: "assets/game screenshots/Black Myth  Wukong Screenshot 2026.06.24 - 02.19.29.45.png",
+        screenshot: "assets/game screenshots/Black Myth  Wukong Screenshot 2026.06.24 - 02.19.29.45.webp",
         description: "Fluid staff martial arts combat rooted in classic Chinese mythology."
     },
     {
         id: "hellblade",
         title: "Hellblade: Senua's Sacrifice",
         tag: "Psychological Dark Fantasy",
-        screenshot: "assets/game screenshots/Hellblade  Senua's Sacrifice Screenshot 2025.04.24 - 18.09.24.02.png",
+        screenshot: "assets/game screenshots/Hellblade  Senua's Sacrifice Screenshot 2025.04.24 - 18.09.24.02.webp",
         description: "Senua's deeply atmospheric descent into Norse myth with binaural audio."
     },
     {
         id: "metal-gear-solid",
         title: "Metal Gear Solid Delta: Snake Eater",
         tag: "Tactical Espionage Action",
-        screenshot: "assets/game screenshots/Metal Gear Solid Delta  Snake Eater Screenshot 2026.05.03 - 22.36.51.84.png",
+        screenshot: "assets/game screenshots/Metal Gear Solid Delta  Snake Eater Screenshot 2026.05.03 - 22.36.51.84.webp",
         description: "Naked Snake's survival stealth mission through dense Cold War Soviet jungle environments."
     },
     {
         id: "tomb-raider",
         title: "Rise of the Tomb Raider",
         tag: "Action-Adventure Survival",
-        screenshot: "assets/game screenshots/Rise of the Tomb Raider Screenshot 2025.06.11 - 01.07.52.70.png",
+        screenshot: "assets/game screenshots/Rise of the Tomb Raider Screenshot 2025.06.11 - 01.07.52.70.webp",
         description: "Lara Croft's expedition through harsh Siberian wilderness uncovering Kitezh's lost immortality myth."
     },
     {
         id: "dead-space",
         title: "Dead Space",
         tag: "Sci-Fi Survival Horror",
-        screenshot: "assets/game screenshots/Dead Space Screenshot 2025.08.19 - 18.38.08.07.png",
+        screenshot: "assets/game screenshots/Dead Space Screenshot 2025.08.19 - 18.38.08.07.webp",
         description: "Atmospheric sci-fi survival horror on the USG Ishimura featuring strategic dismemberment."
     },
     {
         id: "cronos",
         title: "Cronos: The New Dawn",
         tag: "Survival Horror",
-        screenshot: "assets/game screenshots/Cronos  The New Dawn Screenshot 2026.02.09 - 15.46.16.49.png",
+        screenshot: "assets/game screenshots/Cronos  The New Dawn Screenshot 2026.02.09 - 15.46.16.49.webp",
         description: "Retro-futuristic survival horror navigating temporal anomalies."
     }
 ];
@@ -600,6 +600,69 @@ function initScreenshotSlider() {
             }
         });
     }
+
+    // Parallel Multi-Threaded Background Preloader (Preheats browser cache for instant transitions)
+    function preloadAllScreenshots() {
+        const remainingIndices = [];
+        for (let i = 1; i < screenshotsData.length; i++) {
+            remainingIndices.push(i);
+        }
+
+        // Parallel batch loader: downloads images concurrently without blocking main thread
+        function loadBatch(items, batchSize = 3) {
+            if (items.length === 0) return;
+            const currentBatch = items.splice(0, batchSize);
+            Promise.all(currentBatch.map(idx => {
+                return new Promise((resolve) => {
+                    const img = new Image();
+                    img.src = encodeURI(screenshotsData[idx].screenshot);
+                    img.onload = resolve;
+                    img.onerror = resolve;
+                });
+            })).then(() => {
+                if ("requestIdleCallback" in window) {
+                    window.requestIdleCallback(() => loadBatch(items, batchSize));
+                } else {
+                    setTimeout(() => loadBatch(items, batchSize), 60);
+                }
+            });
+        }
+
+        if ("requestIdleCallback" in window) {
+            window.requestIdleCallback(() => loadBatch(remainingIndices), { timeout: 1200 });
+        } else {
+            setTimeout(() => loadBatch(remainingIndices), 500);
+        }
+    }
+
+    preloadAllScreenshots();
+
+    // Instant prefetch on hover/focus of navigation controls & chips
+    function prefetchScreenshot(idx) {
+        if (idx >= 0 && idx < screenshotsData.length) {
+            const pre = new Image();
+            pre.src = encodeURI(screenshotsData[idx].screenshot);
+        }
+    }
+
+    prevBtn.addEventListener("mouseenter", () => {
+        prefetchScreenshot((currentSlideIndex - 1 + screenshotsData.length) % screenshotsData.length);
+    });
+    nextBtn.addEventListener("mouseenter", () => {
+        prefetchScreenshot((currentSlideIndex + 1) % screenshotsData.length);
+    });
+    gameChips.forEach(chip => {
+        chip.addEventListener("mouseenter", () => {
+            const targetId = chip.getAttribute("data-game-target");
+            const chipText = chip.textContent.trim().toLowerCase();
+            const targetIdx = screenshotsData.findIndex(s =>
+                (targetId && s.id === targetId) ||
+                s.title.toLowerCase().includes(chipText) ||
+                chipText.includes(s.title.toLowerCase())
+            );
+            if (targetIdx !== -1) prefetchScreenshot(targetIdx);
+        });
+    });
 }
 
 /* =========================================================

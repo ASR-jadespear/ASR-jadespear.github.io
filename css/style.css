@@ -162,7 +162,7 @@ p {
     inset: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../assets/images/unsplash-bg.jpg') center center / cover no-repeat fixed;
+    background: url('../assets/images/unsplash-bg.webp') center center / cover no-repeat fixed;
     z-index: -4;
     filter: brightness(0.32) contrast(1.2) saturate(1.2);
     pointer-events: none;
