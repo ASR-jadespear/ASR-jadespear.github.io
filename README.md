@@ -6,9 +6,6 @@
 [![Payload](https://img.shields.io/badge/HTML%20Payload-59%20KB-brightgreen?style=for-the-badge)](index.html)
 [![Bandwidth Saved](https://img.shields.io/badge/Media%20Optimization-93%25%20Reduced-teal?style=for-the-badge)](#performance-engineering--optimization-milestones)
 
-> *"Struggling is a Constant. Efforts matter... Quitters can't be Achievers."*  
-> — **Abu Sayeem Rafi (ASR / jadespear)**
-
 Welcome to the official repository of my personal portfolio. This website is engineered from scratch without bulky frontend frameworks or UI libraries, emphasizing pure vanilla web technologies (HTML5, modern CSS3, ES6+ JavaScript, Canvas 2D, and Web Audio API) combined with bespoke cyberpunk and noir mechanical aesthetics.
 
 ---
@@ -53,7 +50,8 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 1. Atmospheric Background & Storm Palette
 
-* **What it looks like**: A dark, moody, mountainous photo overlay darkened to 32% brightness with subtle radial vignettes and cyan chromatic glow.
+- **What it looks like**: A dark, moody, mountainous photo overlay darkened to 32% brightness with subtle radial vignettes and cyan chromatic glow.
+
 - **The Thought Process**: Standard dark-mode websites are often just solid flat `#121212` or pitch black `#000000`. Flat black feels dead, while busy wallpapers ruin readability. By taking a high-resolution atmospheric landscape, compressing it to 2560px WebP, darkening it with CSS `brightness(0.32) contrast(1.2)`, and overlaying frosted glassmorphism containers, the page gains cinematic depth while keeping all text razor-sharp.
 - **Palette Tokens**:
   - `Obsidian Abyss`: `#030E17`, `#041421`
@@ -64,7 +62,8 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 2. Interactive 3D Matrix Cyber Rain
 
-* **What it looks like**: Dual-stream katakana, numeric, and symbolic glyphs flowing down the viewport with 3D parallax depth, glowing white-cyan lead glyphs, and mouse proximity interaction.
+- **What it looks like**: Dual-stream katakana, numeric, and symbolic glyphs flowing down the viewport with 3D parallax depth, glowing white-cyan lead glyphs, and mouse proximity interaction.
+
 - **The Thought Process**: Matrix rain is iconic, but 2D vertical lines often feel flat. I wanted a rain system with true **three-dimensional perspective**:
   - Distant particles fall slowly with smaller fonts and lower opacity.
   - Foreground particles fall faster with larger fonts and neon green-teal trails.
@@ -76,12 +75,14 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 3. Top Navigation & Branding Pulse
 
-* **What it looks like**: A floating glassmorphic bar featuring an "ASR" logo with a cyan breathing neon pulse orb and smooth scrollspy navigation links.
+- **What it looks like**: A floating glassmorphic bar featuring an "ASR" logo with a cyan breathing neon pulse orb and smooth scrollspy navigation links.
+
 - **The Thought Process**: Top bars often suffer from awkward gaps between logos and menus. I reduced the horizontal spacing and added a rhythmic cyber status pulse dot next to the `ASR` brand text to communicate that the portfolio is "live and active."
 
 ### 4. Hero Section & Dynamic Typing Motto
 
-* **What it looks like**: An eye-catching introduction with status tags ("Available for Game Dev & Internships"), location badge, and a bold glowing typewriter animation cycling through three personal philosophies.
+- **What it looks like**: An eye-catching introduction with status tags ("Available for Game Dev & Internships"), location badge, and a bold glowing typewriter animation cycling through three personal philosophies.
+
 - **The Thought Process**: Instead of just saying *"Hi, I'm a developer"*, the hero states my identity: *"Engineering Interactive Worlds & Systems"*. The typewriter animation below it cycles through:
   - `"Struggling is a Constant"`
   - `"Efforts matters..."`
@@ -90,16 +91,18 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 5. About Me & Education Timeline
 
-* **What it looks like**: Two strictly equal-height grid cards. The left card outlines my journey, toolset, and software philosophy. The right card displays a vertical glowing timeline of my academic path (IUT CSE, Rajshahi College, Rajshahi Collegiate School).
+- **What it looks like**: Two strictly equal-height grid cards. The left card outlines my journey, toolset, and software philosophy. The right card displays a vertical glowing timeline of my academic path (IUT CSE, Rajshahi College, Rajshahi Collegiate School).
+
 - **The Thought Process**: Portfolios often look lopsided when "About Me" and "Education" have mismatched heights. Using flexbox column layouts with internal card stretch ensures both cards remain perfectly aligned across desktop resolutions.
 
 ### 6. Alternating Scroll-Synced Mechanical Gears
 
-* **What it looks like**: Giant mechanical gears peeking halfway out of the viewport edges that spin smoothly in real time as you scroll down the page:
+- **What it looks like**: Giant mechanical gears peeking halfway out of the viewport edges that spin smoothly in real time as you scroll down the page:
   - **About Me**: Left Edge (counter-clockwise)
   - **Creative Studio**: Right Edge (clockwise)
   - **Game Screenshots**: Left Edge (counter-clockwise)
   - **Contact**: Right Edge (clockwise)
+
 - **The Thought Process**: I originally had a massive 7-gear transmission box in the middle of the screen. While cool, it broke the visual reading flow and weighed down the layout. Moving to **alternating side gears**:
   - Creates the feeling that an enormous mechanical clockwork chassis powers the entire website.
   - Half of each 400px gear is tucked off-screen, creating a framing border on left and right margins.
@@ -108,37 +111,42 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 7. Featured Projects Showcase
 
-* **What it looks like**: Six detailed project cards categorized with status pills ("Completed", "In Development") and interactive detail modals:
+- **What it looks like**: Six detailed project cards categorized with status pills ("Completed", "In Development") and interactive detail modals:
   1. **React-O-Ball**: Unity/C# arcade physics game with elemental chemistry reaction systems.
   2. **Restoration**: 2.5D physics platformer with dynamic grappling hooks and gravity inversion.
   3. **Nightmare**: Retro top-down psychological survival horror with dynamic raycast field-of-view.
   4. **Acadence**: Full academic workflow manager and collaborative study ecosystem.
   5. **Finite State Machine Cache**: Memory-efficient C++ cache engine with stateful eviction heuristics.
   6. **SDG 4 Education Research**: Statistical data analysis exploring inequality in digital education access.
+
 - **The Thought Process**: I deliberately removed generic project screenshot mockups from the card headers to eliminate visual clutter and keep cards compact and readable. The cards highlight technical implementation details, architecture, and technology tag pills. Clicking any card triggers an accessible `<dialog>` modal with full deep-dive descriptions.
 
 ### 8. Creative Studio (Audio Synth & Mandala Canvas)
 
-* **What it looks like**: Two interactive creative micro-apps:
+- **What it looks like**: Two interactive creative micro-apps:
   1. **Web Audio Synth Piano**: A functional octave keyboard (`C4` to `C5`) playable with mouse clicks or keyboard keys (`A`, `S`, `D`, `F`, `G`, `H`, `J`, `K`). Generates warm sine-wave frequencies live using the browser's native Web Audio API — zero audio files required!
   2. **Interactive Mandala Studio**: A canvas widget allowing visitors to draw with mouse or touch, mirroring strokes into 8-fold radial sacred geometry. Includes an "Auto Animate" mode and an art toggle overlay showing my original digital mandala illustration.
+
 - **The Thought Process**: Game development requires both technical discipline and artistic sensibility. This section proves both: real-time procedural audio synthesis alongside visual symmetry algorithms.
 
 ### 9. Honors & Mathematical Olympiads
 
-* **What it looks like**: High-contrast achievement cards commemorating national and global honors:
+- **What it looks like**: High-contrast achievement cards commemorating national and global honors:
   - **2019 Bangladesh Mathematical Olympiad (BdMO)**: National 2nd Runner-up.
   - **2020 International Youth Math Challenge (IYMC)**: Silver Honour (Top 7% globally).
+
 - **The Thought Process**: Game physics, graphics shaders, and game logic all depend on combinatorial mathematics and discrete logic. Showcasing my mathematical foundation provides context for why I approach game architecture and optimization so rigorously.
 
 ### 10. Hobbies & Cinematic Screenshot Slider
 
-* **What it looks like**: A cinematic screenshot gallery showcasing in-game captures from games that inspire my art style (Genshin Impact, God of War, Resident Evil, Stellar Blade, Control, Silent Hill f, The Last of Us, A Plague Tale, Pragmata, Black Myth: Wukong, Hellblade, MGS Delta, Tomb Raider, Dead Space, Cronos). Includes navigation arrows, slide indicators, a 1080p Lightbox modal, and interactive game chip selectors.
+- **What it looks like**: A cinematic screenshot gallery showcasing in-game captures from games that inspire my art style (Genshin Impact, God of War, Resident Evil, Stellar Blade, Control, Silent Hill f, The Last of Us, A Plague Tale, Pragmata, Black Myth: Wukong, Hellblade, MGS Delta, Tomb Raider, Dead Space, Cronos). Includes navigation arrows, slide indicators, a 1080p Lightbox modal, and interactive game chip selectors.
+
 - **The Thought Process**: Capturing games with photo-mode cameras trains the eye for composition, color grading, lighting, and environmental storytelling. Below the slider, four pixel-art styled floating boxes highlight my offline hobbies: *Story-Driven Games*, *Story Books & World-building*, *Psycho-Thriller Cinema*, and *Visual Mandala Editing*.
 
 ### 11. Vibe Coding Interactive Terminal Console
 
-* **What it looks like**: A 4:3 aspect ratio retro-futuristic terminal window styled like an embedded Linux CLI (`asr@iut:~$`).
+- **What it looks like**: A 4:3 aspect ratio retro-futuristic terminal window styled like an embedded Linux CLI (`asr@iut:~$`).
+
 - **Supported Commands**:
   - `help`: Lists all valid terminal commands.
   - `about`: Outputs personal background, degree, and focus.
@@ -153,7 +161,8 @@ As a Computer Science and Engineering student at the **Islamic University of Tec
 
 ### 12. Contact Section & Email Copy Feedback
 
-* **What it looks like**: Clean direct connection channels (Email, GitHub, LinkedIn, Instagram, Facebook) featuring a one-click clipboard copy bar: `📧 abusayeemrafi@gmail.com`.
+- **What it looks like**: Clean direct connection channels (Email, GitHub, LinkedIn, Instagram, Facebook) featuring a one-click clipboard copy bar: `📧 abusayeemrafi@gmail.com`.
+
 - **The Thought Process**: Visitors shouldn't be forced to open their default OS email client just to grab an address. Clicking the bar copies the address to the system clipboard via `navigator.clipboard.writeText()` and displays an animated teal checkmark confirmation: `"Copied: abusayeemrafi@gmail.com ✓"`.
 
 ---
@@ -207,8 +216,6 @@ ASR-jadespear.github.io/
         ├── Resident Evil Requiem Screenshot ... .webp
         └── ... (12 other WebP captures)
 ```
-
-Right-click `index.html` inside VS Code and select **"Open with Live Server"**.
 
 ---
 
