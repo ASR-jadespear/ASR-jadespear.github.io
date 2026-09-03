@@ -242,13 +242,11 @@ p {
 }
 
 /* =========================================================
-   SINGLE SCROLL-SYNCED MECHANICAL GEAR (RIGHT SIDE EDGE)
+   SCROLL-SYNCED MECHANICAL GEARS (ALTERNATING LEFT & RIGHT)
    ========================================================= */
 
 .side-scroll-gear {
     position: absolute;
-    right: -200px;
-    /* Half of 400px gear is tucked off the right screen edge */
     top: 50%;
     transform: translateY(-50%) rotate(0deg);
     width: 400px;
@@ -256,9 +254,22 @@ p {
     pointer-events: none;
     z-index: 1;
     opacity: 0.85;
-    filter: drop-shadow(-8px 0 25px rgba(72, 229, 194, 0.22)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.65));
     will-change: transform;
     transition: opacity 0.3s ease;
+}
+
+.side-scroll-gear.gear-right {
+    right: -200px;
+    /* Half of 400px gear is tucked off the right screen edge */
+    left: auto;
+    filter: drop-shadow(-8px 0 25px rgba(72, 229, 194, 0.22)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.65));
+}
+
+.side-scroll-gear.gear-left {
+    left: -200px;
+    /* Half of 400px gear is tucked off the left screen edge */
+    right: auto;
+    filter: drop-shadow(8px 0 25px rgba(72, 229, 194, 0.22)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.65));
 }
 
 .side-scroll-gear .gear-svg-disc {
@@ -272,8 +283,15 @@ p {
     .side-scroll-gear {
         width: 280px;
         height: 280px;
-        right: -140px;
         opacity: 0.7;
+    }
+
+    .side-scroll-gear.gear-right {
+        right: -140px;
+    }
+
+    .side-scroll-gear.gear-left {
+        left: -140px;
     }
 }
 
@@ -281,8 +299,15 @@ p {
     .side-scroll-gear {
         width: 200px;
         height: 200px;
-        right: -100px;
         opacity: 0.55;
+    }
+
+    .side-scroll-gear.gear-right {
+        right: -100px;
+    }
+
+    .side-scroll-gear.gear-left {
+        left: -100px;
     }
 }
 

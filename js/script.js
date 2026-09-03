@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initVibeTerminal();
     initEmailCopy();
     initFooterYear();
-    initSingleScrollGear();
+    initScrollGears();
     initTypingSubtitle();
 });
 
@@ -1254,32 +1254,47 @@ function initFooterYear() {
 }
 
 /* =========================================================
-   11. SINGLE SCROLL-SYNCED MECHANICAL GEAR (RIGHT SIDE EDGE)
+   11. SCROLL-SYNCED MECHANICAL GEARS (LEFT & RIGHT EDGES)
    ========================================================= */
-function initSingleScrollGear() {
-    const gear = document.getElementById("side-scroll-gear");
-    if (!gear) return;
+function initScrollGears() {
+    const gearNodes = document.querySelectorAll(".side-scroll-gear");
+    if (!gearNodes || gearNodes.length === 0) return;
 
-    let targetRotation = window.scrollY * 0.25;
-    let currentRotation = targetRotation;
-    let isVisible = false;
+    const gears = Array.from(gearNodes).map(el => {
+        const dir = parseFloat(el.getAttribute("data-dir")) || 1;
+        const initialRotation = window.scrollY * 0.25 * dir;
+        el.style.transform = `translateY(-50%) rotate(${initialRotation}deg)`;
+        return {
+            element: el,
+            dir: dir,
+            currentRotation: initialRotation,
+            targetRotation: initialRotation,
+            isVisible: false
+        };
+    });
+
     let animationId = null;
+    let anyVisible = false;
 
     function render() {
-        if (!isVisible) {
+        if (!anyVisible) {
             animationId = null;
             return;
         }
 
-        // Smooth continuous rotation lerp synced with page scroll
-        currentRotation += (targetRotation - currentRotation) * 0.08;
-        gear.style.transform = `translateY(-50%) rotate(${currentRotation}deg)`;
+        gears.forEach(g => {
+            if (g.isVisible) {
+                // Smooth continuous rotation lerp synced with page scroll
+                g.currentRotation += (g.targetRotation - g.currentRotation) * 0.08;
+                g.element.style.transform = `translateY(-50%) rotate(${g.currentRotation}deg)`;
+            }
+        });
 
         animationId = requestAnimationFrame(render);
     }
 
     function startLoop() {
-        if (!animationId && isVisible) {
+        if (!animationId && anyVisible) {
             animationId = requestAnimationFrame(render);
         }
     }
@@ -1291,34 +1306,55 @@ function initSingleScrollGear() {
         }
     }
 
-    // Only animate when near or inside the Creative section
-    const creativeSection = document.getElementById("creative");
-    if (creativeSection && "IntersectionObserver" in window) {
+    // IntersectionObserver watches parent section of each gear to pause offscreen
+    if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                isVisible = entry.isIntersecting;
-                if (isVisible) {
-                    targetRotation = window.scrollY * 0.25;
-                    currentRotation = targetRotation;
-                    gear.style.transform = `translateY(-50%) rotate(${currentRotation}deg)`;
-                    startLoop();
-                } else {
-                    stopLoop();
+                const section = entry.target;
+                const gear = gears.find(g => section.contains(g.element));
+                if (gear) {
+                    gear.isVisible = entry.isIntersecting;
+                    if (gear.isVisible) {
+                        const target = window.scrollY * 0.25 * gear.dir;
+                        gear.targetRotation = target;
+                        gear.currentRotation = target;
+                        gear.element.style.transform = `translateY(-50%) rotate(${target}deg)`;
+                    }
                 }
             });
+
+            anyVisible = gears.some(g => g.isVisible);
+            if (anyVisible) {
+                startLoop();
+            } else {
+                stopLoop();
+            }
         }, {
             rootMargin: "250px 0px"
         });
-        observer.observe(creativeSection);
+
+        gears.forEach(g => {
+            const parentSection = g.element.closest("section");
+            if (parentSection) {
+                observer.observe(parentSection);
+            } else {
+                g.isVisible = true;
+            }
+        });
     } else {
-        isVisible = true;
+        gears.forEach(g => g.isVisible = true);
+        anyVisible = true;
         startLoop();
     }
 
-    // Scroll listener updates target rotation smoothly
+    // Scroll listener updates target rotation smoothly for all active gears
     window.addEventListener("scroll", () => {
-        targetRotation = window.scrollY * 0.25;
-        if (isVisible && !animationId) {
+        const currentY = window.scrollY;
+        gears.forEach(g => {
+            g.targetRotation = currentY * 0.25 * g.dir;
+        });
+
+        if (anyVisible && !animationId) {
             startLoop();
         }
     }, { passive: true });
