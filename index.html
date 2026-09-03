@@ -5,574 +5,1094 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Abu Sayeem Rafi | Portfolio</title>
+    <title>Abu Sayeem Rafi (ASR) | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Abu Sayeem Rafi (ASR) - Computer Science & Engineering Undergraduate at IUT, Aspiring Game Developer, and Math Olympiad Runner-up.">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Abu Sayeem Rafi | Portfolio">
+    <meta property="og:description"
+        content="Computer Science & Engineering Undergraduate at IUT, Aspiring Game Developer, and Creative Technologist.">
+    <meta property="og:image" content="assets/images/profile-avatar.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=3.8">
 </head>
 
 <body>
 
-    <!-- ==================== NAVIGATION ==================== -->
+    <!-- Custom Unsplash Ambient Background Layer -->
+    <div class="custom-bg-layer" aria-hidden="true"></div>
 
+    <!-- Interactive 3D Cyber Matrix Rain Canvas -->
+    <canvas id="matrix-canvas" aria-hidden="true"></canvas>
+    <div class="storm-vignette" aria-hidden="true"></div>
+
+    <!-- Blurred Teal Luminous Ambient Lights -->
+    <div class="teal-glow-orb orb-1" aria-hidden="true"></div>
+    <div class="teal-glow-orb orb-2" aria-hidden="true"></div>
+    <div class="teal-glow-orb orb-3" aria-hidden="true"></div>
+
+
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Main Navigation">
 
-            <a href="#home" class="logo">ASR</a>
+            <div class="brand-group">
+                <a href="#home" class="logo" aria-label="ASR Home">
+                    <span class="storm-gradient-text">ASR</span>
+                </a>
+                <span class="brand-divider" aria-hidden="true">/</span>
+                <a href="https://github.com/ASR-jadespear" target="_blank" rel="noopener noreferrer" class="brand-tag"
+                    title="GitHub: ASR-jadespear">
+                    <span class="pulse-beacon" aria-hidden="true"></span>
+                    <span class="brand-tag-text">jadespear</span>
+                </a>
+                <div class="mini-eq-visualizer" aria-hidden="true" title="Creative Audio Engine">
+                    <span class="eq-bar eq-1"></span>
+                    <span class="eq-bar eq-2"></span>
+                    <span class="eq-bar eq-3"></span>
+                    <span class="eq-bar eq-4"></span>
+                </div>
+            </div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
+                <li><a href="#creative">Studio</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#terminal">Console</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Open Navigation Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
 
         </nav>
     </header>
 
-
     <main>
 
-        <!-- ==================== HOME ==================== -->
-
+        <!-- ==================== HERO SECTION ==================== -->
         <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
 
-            <p class="nickname">ASR</p>
+                    <div class="hero-content">
 
-            <h1>Abu Sayeem Rafi</h1>
+                        <div class="hero-status-pill">
+                            <svg class="pixel-icon" width="14" height="14" viewBox="0 0 16 16" fill="currentColor"
+                                style="shape-rendering:crispEdges; color:var(--storm-teal); margin-right:4px;"
+                                aria-hidden="true">
+                                <path
+                                    d="M2 4h3v2H2zM5 2h2v2H5zM7 4h2v2H7zM9 2h2v2H9zM11 4h3v2h-3zM1 6h14v3H1zM2 9h12v2H2zM4 11h8v2H4zM6 13h4v2H6z" />
+                            </svg>
+                            Open to Game Dev & Creative Collaborations
+                        </div>
 
-            <h2>
-                Computer Science & Engineering Undergraduate
-            </h2>
+                        <h1 class="hero-title">
+                            Abu Sayeem Rafi
+                        </h1>
 
-            <p class="hero-description">
-                Student at the Islamic University of Technology with an interest
-                in game development, creative digital work, logical thinking,
-                and building things that are fun to explore.
-            </p>
+                        <h2 class="hero-subtitle">
+                            Computer Science & Engineering Undergraduate @ IUT
+                        </h2>
 
-            <p class="career-goal">
-                Aspiring game developer • Future game industry enthusiast
-            </p>
+                        <p class="Typing-subtitle"><span class="typing-text">Struggling is a Constant</span><span
+                                class="typing-cursor" aria-hidden="true">_</span></p>
 
-            <div class="social-links">
+                        <div class="hero-chips">
+                            <span class="hero-chip">
+                                <svg class="pixel-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges; color:var(--storm-teal);" aria-hidden="true">
+                                    <path
+                                        d="M3 3h10v2H3zM1 5h14v6H1zM2 11h3v2H2zM11 11h3v2h-3zM4 6h2v4H4zM3 7h4v2H3zM10 7h2v2h-2zM12 9h2v2h-2z" />
+                                </svg>
+                                Game Development
+                            </span>
+                            <span class="hero-chip">
+                                <svg class="pixel-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges; color:var(--storm-teal);" aria-hidden="true">
+                                    <path d="M4 2h8v5H4zM2 3h2v3H2zM12 3h2v3h-2zM5 7h6v2H5zM7 9h2v3H7zM5 12h6v2H5z" />
+                                </svg>
+                                Mathematical Olympiad
+                            </span>
+                            <span class="hero-chip">
+                                <svg class="pixel-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges; color:var(--storm-teal);" aria-hidden="true">
+                                    <path
+                                        d="M7 1h2v4H7zM7 11h2v4H7zM1 7h4v2H1zM11 7h4v2h-4zM6 6h4v4H6zM5 5h1v1H5zM10 5h1v1h-1zM5 10h1v1H5zM10 10h1v1h-1z" />
+                                </svg>
+                                Aesthetic Geometry
+                            </span>
+                            <span class="hero-chip">
+                                <svg class="pixel-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges; color:var(--storm-teal);" aria-hidden="true">
+                                    <path d="M6 2h7v2H6zM6 4h2v7H6zM11 4h2v5h-2zM3 9h4v4H3zM9 7h4v4H9z" />
+                                </svg>
+                                Music & Art
+                            </span>
 
-                <a href="https://github.com/ASR-jadespear" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
+                        </div>
 
-                <a href="https://instagram.com/asr_jadespear" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn-primary">
+                                Explore Projects
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
 
-                <a href="https://facebook.com/abusayeem.rafi.1" target="_blank" rel="noopener noreferrer">
-                    Facebook
-                </a>
+                        <div class="hero-socials">
+                            <a href="https://github.com/ASR-jadespear" target="_blank" rel="noopener noreferrer"
+                                class="social-pill" title="GitHub">
+                                GitHub ↗
+                            </a>
 
+                            <a href="https://www.linkedin.com/in/abu-sayeem-rafi-28a465393/" target="_blank"
+                                rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+                                LinkedIn ↗
+                            </a>
+
+                            <a href="https://instagram.com/asr_jadespear" target="_blank" rel="noopener noreferrer"
+                                class="social-pill" title="Instagram">
+                                Instagram ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Refined Avatar Frame -->
+                    <div class="hero-visual-card">
+                        <div class="avatar-frame">
+                            <img src="assets/images/profile-avatar.jpg"
+                                alt="Abu Sayeem Rafi - Creative Developer & Game Designer" class="avatar-img"
+                                width="330" height="330">
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
         </section>
 
 
-        <!-- ==================== ABOUT ==================== -->
-
+        <!-- ==================== 01 ABOUT ==================== -->
         <section id="about">
+            <div class="container">
 
-            <div class="section-heading">
-                <p>01</p>
-                <h2>Who Am I?</h2>
-            </div>
+                <div class="section-header">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">Who Am I?</h2>
+                </div>
 
-            <div class="about-content">
+                <div class="about-grid">
 
-                <div class="about-introduction">
+                    <!-- Personal Bio -->
+                    <div class="editorial-card">
+                        <h3>About Me</h3>
 
-                    <h3>About Me</h3>
+                        <p>
+                            I am <strong>Abu Sayeem Rafi</strong>, an undergraduate Computer Science and Engineering
+                            student at the <strong>Islamic University of Technology (IUT)</strong>.
+                        </p>
 
-                    <p>
-                        I am Abu Sayeem Rafi, an undergraduate student studying
-                        Computer Science and Engineering at the Islamic
-                        University of Technology.
-                    </p>
+                        <p>
+                            I'm from
+                            <strong>Rajshahi, Bangladesh</strong>.
+                        </p>
 
-                    <p>
-                        I am from Rajshahi, Bangladesh.
-                    </p>
+                        <p>
+                            I like the acronym of my name, <strong>ASR</strong>, and use it as my nickname across all my
+                            digital creations. I deeply admire creative works—both digital and handmade—while equally
+                            enjoying logical reasoning and problem-solving.
+                        </p>
 
-                    <p>
-                        I like the acronym of my name, ASR, and use it as a
-                        nickname across my digital work.
-                    </p>
+                        <p>
+                            I am particularly drawn to story-based games and interactive experiences, and my career goal
+                            is to to join <strong>academia</strong> and additionally to work in and contribute to the
+                            <strong>game industry</strong>.
+                        </p>
 
-                    <p>
-                        I deeply admire creative works, both digital and
-                        handmade, while also enjoying logical thinking and
-                        problem solving.
-                    </p>
+                    </div>
 
-                    <p>
-                        I am particularly interested in game development and
-                        hope to eventually work in the game industry.
-                    </p>
+                    <!-- Education Timeline (Chronological: School -> College -> University) -->
+                    <div class="editorial-card">
+                        <h3>Education Journey</h3>
+
+                        <div class="timeline">
+
+                            <!-- 1. School (Top) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Primary Education</span>
+                                <div class="timeline-content">
+                                    <h4>Rajshahi Cantonment School and College</h4>
+                                    <p>Foundational education where curiosity in computers, art, and music first took
+                                        root.</p>
+                                </div>
+                            </div>
+
+                            <!-- 2. College (Middle) -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Completed JSC, SSC and HSC</span>
+                                <div class="timeline-content">
+                                    <h4>Rajshahi Cadet College</h4>
+                                    <p>Rigorous academics, discipline, and foundation in science and competitive
+                                        mathematics.</p>
+                                </div>
+                            </div>
+
+                            <!-- 3. University (Bottom / Present, Line Fades Downward) -->
+                            <div class="timeline-item timeline-current">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">Undergraduate • Present</span>
+                                <div class="timeline-content">
+                                    <h4>Islamic University of Technology</h4>
+                                    <p>Computer Science and Engineering. Focusing on game mechanics, algorithms, systems
+                                        design, and graphics.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-continuation-arrow" aria-hidden="true"></div>
+
+                        </div>
+                    </div>
 
                 </div>
 
-
-                <!-- Education -->
-
-                <div class="education">
-
-                    <h3>Education Journey</h3>
-
-                    <div class="education-item">
-                        <h4>Islamic University of Technology</h4>
-                        <p>
-                            Undergraduate student<br>
-                            Computer Science and Engineering
-                        </p>
-                    </div>
-
-                    <div class="education-item">
-                        <h4>Rajshahi Cadet College</h4>
-                        <p>
-                            Completed JSC, SSC and HSC
-                        </p>
-                    </div>
-
-                    <div class="education-item">
-                        <h4>Rajshahi Cantonment School and College</h4>
-                        <p>
-                            Primary education
-                        </p>
-                    </div>
-
-                </div>
-
             </div>
-
         </section>
 
 
-        <!-- ==================== CREATIVE SIDE ==================== -->
-
-        <section id="creative-side">
-
-            <div class="section-heading">
-                <p>02</p>
-                <h2>Creative Side</h2>
-            </div>
-
-            <div class="interest-grid">
-
-                <article class="interest-card">
-                    <h3>Game Development</h3>
-                    <p>
-                        Story-based games are a major source of inspiration
-                        for me, and I want to create games of my own.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Visual Creativity</h3>
-                    <p>
-                        I enjoy designing mandalas, editing images and
-                        experimenting with aesthetic visual ideas.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Creative Works</h3>
-                    <p>
-                        I admire creative work in both digital and handmade
-                        forms.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Logical Thinking</h3>
-                    <p>
-                        I also enjoy the structure, reasoning and problem-solving
-                        side of computer science.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Musical Expertise</h3>
-                    <p>
-                        I have had some formal education in Music, and am adept at playing the piano and harmonium.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==================== ACHIEVEMENTS ==================== -->
-
-        <section id="achievements">
-
-            <div class="section-heading">
-                <p>03</p>
-                <h2>Remarkable Achievements</h2>
-            </div>
-
-            <div class="achievement-list">
-
-                <article class="achievement-card">
-
-                    <p class="achievement-year">2019</p>
-
-                    <h3>
-                        Bangladesh Mathematical Olympiad
-                    </h3>
-
-                    <p>
-                        National Level
-                    </p>
-
-                    <strong>
-                        2nd Runner-up
-                    </strong>
-
-                </article>
-
-
-                <article class="achievement-card">
-
-                    <p class="achievement-year">2020</p>
-
-                    <h3>
-                        International Youth Math Challenge
-                    </h3>
-
-                    <p>
-                        Finalist • Silver Honour
-                    </p>
-
-                    <strong>
-                        Top 7% Globally
-                    </strong>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==================== PROJECTS ==================== -->
-
+        <!-- ==================== 02 PROJECTS ==================== -->
         <section id="projects">
+            <div class="container">
 
-            <div class="section-heading">
-                <p>04</p>
-                <h2>Projects</h2>
+                <div class="section-header">
+                    <span class="section-tag">Projects</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    </p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-filter="all">All</button>
+                    <button class="tab-btn" data-filter="game">Game Development</button>
+                    <button class="tab-btn" data-filter="academic">Academic Software</button>
+                    <button class="tab-btn" data-filter="progress">In Progress</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+
+                    <!-- Project 1: React-O-Ball -->
+                    <article class="project-card" data-category="game" data-project-key="react-o-ball">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Game Development</span>
+                            <span class="project-status-pill status-completed">Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">React-O-Ball</h3>
+                            <p class="project-desc">
+                                A game combining the mechanics of brick-and-ball games with pinball, featuring elemental
+                                reaction mechanics.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">C++</span>
+                                <span class="tag-pill">Physics</span>
+                                <span class="tag-pill">Elemental Reactions</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/ASR-jadespear/React-O-Ball" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    View on GitHub ↗
+                                </a>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Acadence -->
+                    <article class="project-card" data-category="academic" data-project-key="acadence">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Academic Software</span>
+                            <span class="project-status-pill status-completed">Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Acadence</h3>
+                            <p class="project-desc">
+                                A student-teacher friendly academic all-rounder inspired by platforms such as Google
+                                Classroom and Student Information Systems.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">Full-Stack</span>
+                                <span class="tag-pill">UI/UX</span>
+                                <span class="tag-pill">C++</span>
+                                <span class="tag-pill">OOP</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/ASR-jadespear/CSE-4302-Project" target="_blank"
+                                    rel="noopener noreferrer" class="btn-github">
+                                    View on GitHub ↗
+                                </a>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Restoration -->
+                    <article class="project-card" data-category="game" data-project-key="restoration">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Educational Game</span>
+                            <span class="project-status-pill status-completed">Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Restoration</h3>
+                            <p class="project-desc">
+                                An isometric game designed to teach children environmental awareness through quizzes,
+                                restoration tasks and cooperative gameplay.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">Isometric 2D</span>
+                                <span class="tag-pill">Java</span>
+                                <span class="tag-pill">Co-op</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/mahfuzkamalsohan/visual-programming-lab-project"
+                                    target="_blank" rel="noopener noreferrer" class="btn-github">
+                                    View on GitHub ↗
+                                </a>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: 2.5D Game -->
+                    <article class="project-card" data-category="progress" data-project-key="nightmare-game">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Game Development</span>
+                            <span class="project-status-pill status-progress">Coming Soon</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">2.5D Game</h3>
+                            <p class="project-desc">
+                                A currently developing 2.5D game inspired by <em>Little Nightmares</em> and <em>Resident
+                                    Evil</em>, featuring dark atmosphere and suspense.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">2.5D</span>
+                                <span class="tag-pill">Atmospheric Horror</span>
+                                <span class="tag-pill">Godot</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-github" style="color:var(--storm-slate)">
+                                    In Active Development
+                                </span>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: FSM Cache Controller Simulator -->
+                    <article class="project-card" data-category="academic" data-project-key="fsm-cache-simulator">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Computer Architecture</span>
+                            <span class="project-status-pill status-completed">Completed</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">FSM Cache Controller Simulator</h3>
+                            <p class="project-desc">
+                                High-performance C++ simulator modeling a Finite State Machine cache controller,
+                                multi-level hierarchy resolution, write policies, and latency benchmarks.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">C++</span>
+                                <span class="tag-pill">Architecture</span>
+                                <span class="tag-pill">FSM Logic</span>
+                                <span class="tag-pill">Cache Simulation</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/ASR-jadespear/FSM-Cache-Controller-Simulator"
+                                    target="_blank" rel="noopener noreferrer" class="btn-github">
+                                    View on GitHub ↗
+                                </a>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: SDG 4 Research Paper -->
+                    <article class="project-card" data-category="academic" data-project-key="sdg4-research">
+                        <div class="project-card-header">
+                            <span class="project-category-badge">Academic Research</span>
+                            <span class="project-status-pill status-moderation">Under Moderation</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Learner-Centered Practices & SDG 4</h3>
+                            <p class="project-desc">
+                                Empirical research analyzing student-centric pedagogy, collaborative engagement, and
+                                outcomes in Bangladeshi universities using Mann–Whitney U test analysis for SDG 4.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag-pill">Research Paper</span>
+                                <span class="tag-pill">Mann–Whitney U</span>
+                                <span class="tag-pill">SDG 4</span>
+                                <span class="tag-pill">Statistics</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-github" style="color:#f3c77d;">
+                                    Under Moderation
+                                </span>
+                                <span class="btn-modal-trigger">View Details +</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
             </div>
-
-            <div class="project-list">
-
-                <!-- Project 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            Game Development
-                        </p>
-
-                        <h3>React-O-Ball</h3>
-
-                        <p>
-                            A game combining the mechanics of brick-and-ball
-                            games with pinball, featuring elemental reaction
-                            mechanics.
-                        </p>
-
-                        <p class="project-status">
-                            Completed
-                        </p>
-
-                        <a href="https://github.com/ASR-jadespear/React-O-Ball" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 2 -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            Academic Software
-                        </p>
-
-                        <h3>Acadence</h3>
-
-                        <p>
-                            A student-teacher friendly academic all-rounder
-                            inspired by platforms such as Google Classroom
-                            and Student Information Systems. It provides
-                            study tools for students and management tools
-                            for teachers.
-                        </p>
-
-                        <p class="project-status">
-                            Completed
-                        </p>
-
-                        <a href="https://github.com/ASR-jadespear/CSE-4302-Project" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 3 -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            Educational Game
-                        </p>
-
-                        <h3>Restoration</h3>
-
-                        <p>
-                            An isometric game designed to teach children
-                            environmental awareness through quizzes,
-                            environmental restoration tasks and a unique
-                            cooperative gameplay experience.
-                        </p>
-
-                        <p class="project-status">
-                            Completed
-                        </p>
-
-                        <a href="https://github.com/mahfuzkamalsohan/visual-programming-lab-project" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Current Project -->
-
-                <article class="project-card current-project">
-
-                    <div class="project-number">
-                        04
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            Game Development • In Progress
-                        </p>
-
-                        <h3>2.5D Game</h3>
-
-                        <p>
-                            A currently developing 2.5D game inspired by
-                            <em>Little Nightmares</em> and
-                            <em>Resident Evil</em>.
-                        </p>
-
-                        <p class="project-status">
-                            Coming Soon
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
         </section>
 
 
-        <!-- ==================== GAMES & MEDIA ==================== -->
+        <!-- ==================== 03 CREATIVE STUDIO ==================== -->
+        <section id="creative">
+            <div class="container">
 
-        <section id="interests">
+                <div class="section-header">
+                    <span class="section-tag">Creative Side</span>
+                    <h2 class="section-title">Music & Visual Creativity</h2>
+                    <p class="section-subtitle">Real-time Web Audio piano synthesizer and interactive sacred mandala art
+                        canvas.</p>
+                </div>
 
-            <div class="section-heading">
-                <p>05</p>
-                <h2>Things I Enjoy</h2>
-            </div>
+                <div class="creative-grid">
 
+                    <!-- Interactive Web Audio Synth & Piano -->
+                    <div class="creative-card">
+                        <div class="creative-card-header">
+                            <h3>Musical Expertise</h3>
+                            <p>Formal education in music, adept at playing the piano and harmonium. Tap keys or use
+                                keyboard keys [A-K] to play.</p>
+                        </div>
 
-            <!-- Games -->
+                        <div class="piano-container">
+                            <div class="piano-controls">
+                                <div class="synth-mode-selector">
+                                    <button class="mode-btn active" data-mode="piano">Piano</button>
+                                    <button class="mode-btn" data-mode="harmonium">Harmonium</button>
+                                </div>
+                                <div class="note-display" id="active-note-display">Tap a key to play</div>
+                            </div>
 
-            <div class="media-section">
+                            <div class="piano-keys">
+                                <div class="piano-key white" data-note="C4">
+                                    <span class="key-note">C4</span>
+                                    <span class="key-hint">A</span>
+                                </div>
+                                <div class="piano-key black" data-note="C#4">
+                                    <span class="key-note">C#</span>
+                                    <span class="key-hint">W</span>
+                                </div>
+                                <div class="piano-key white" data-note="D4">
+                                    <span class="key-note">D4</span>
+                                    <span class="key-hint">S</span>
+                                </div>
+                                <div class="piano-key black" data-note="D#4">
+                                    <span class="key-note">D#</span>
+                                    <span class="key-hint">E</span>
+                                </div>
+                                <div class="piano-key white" data-note="E4">
+                                    <span class="key-note">E4</span>
+                                    <span class="key-hint">D</span>
+                                </div>
+                                <div class="piano-key white" data-note="F4">
+                                    <span class="key-note">F4</span>
+                                    <span class="key-hint">F</span>
+                                </div>
+                                <div class="piano-key black" data-note="F#4">
+                                    <span class="key-note">F#</span>
+                                    <span class="key-hint">T</span>
+                                </div>
+                                <div class="piano-key white" data-note="G4">
+                                    <span class="key-note">G4</span>
+                                    <span class="key-hint">G</span>
+                                </div>
+                                <div class="piano-key black" data-note="G#4">
+                                    <span class="key-note">G#</span>
+                                    <span class="key-hint">Y</span>
+                                </div>
+                                <div class="piano-key white" data-note="A4">
+                                    <span class="key-note">A4</span>
+                                    <span class="key-hint">H</span>
+                                </div>
+                                <div class="piano-key black" data-note="A#4">
+                                    <span class="key-note">A#</span>
+                                    <span class="key-hint">U</span>
+                                </div>
+                                <div class="piano-key white" data-note="B4">
+                                    <span class="key-note">B4</span>
+                                    <span class="key-hint">J</span>
+                                </div>
+                                <div class="piano-key white" data-note="C5">
+                                    <span class="key-note">C5</span>
+                                    <span class="key-hint">K</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <h3>Games I've Played</h3>
+                        <p style="font-size:0.82rem; color:var(--storm-slate); text-align:center;">
+                            Synthesized live in your browser using the native Web Audio API.
+                        </p>
+                    </div>
 
-                <div class="tag-list">
+                    <!-- Interactive Mandala Studio -->
+                    <div class="creative-card">
+                        <div class="creative-card-header">
+                            <h3>Visual Creativity</h3>
+                            <span style="font-size:1.3rem; color:var(--text-secondary);">Draw here!!!</span>
+                        </div>
 
-                    <span>Resident Evil</span>
-                    <span>God of War</span>
-                    <span>Stellar Blade</span>
-                    <span>Control</span>
-                    <span>Silent Hill</span>
-                    <span>The Last of Us</span>
-                    <span>A Plague Tale</span>
-                    <span>Pragmata</span>
-                    <span>Black Myth: Wukong</span>
-                    <span>Hellblade</span>
-                    <span>Metal Gear Solid</span>
-                    <span>Tomb Raider</span>
-                    <span>Dead Space</span>
+                        <div class="mandala-preview-container">
+                            <canvas id="mandala-canvas"></canvas>
+                            <img src="assets/images/mandala-art.jpg" alt="Luminous Sacred Mandala Art"
+                                id="mandala-overlay" class="mandala-overlay-img" loading="lazy">
+                        </div>
+
+                        <div class="mandala-controls">
+                            <div class="mandala-actions">
+                                <button class="mandala-btn" id="mandala-toggle-img-btn">Toggle Art View</button>
+                                <button class="mandala-btn" id="mandala-animate-btn">Auto Animate</button>
+                                <button class="mandala-btn" id="mandala-clear-btn">Clear</button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
-                <p class="currently-enjoying">
-                    <strong>Regularly played:</strong>
-                    Genshin Impact
-                </p>
-
             </div>
 
-
-            <!-- Anime -->
-
-            <div class="media-section">
-
-                <h3>Anime Watched</h3>
-
-                <div class="tag-list">
-
-                    <span>Devil May Cry</span>
-                    <span>Demon Slayer</span>
-                    <span>Cyberpunk: Edgerunners</span>
-
-                </div>
-
+            <!-- Single Scroll-Synced Gear (Showing half on right side) -->
+            <div class="side-scroll-gear" id="side-scroll-gear" aria-hidden="true">
+                <svg viewBox="0 0 400 400" width="100%" height="100%" class="gear-svg-disc">
+                    <!-- Outer Gear Silhouette -->
+                    <path
+                        d="M 335.0,200.0 L 349.6,211.5 L 378.7,221.9 L 375.4,240.5 L 344.5,240.3 L 326.9,246.2 L 326.9,246.2 L 336.6,262.0 L 360.4,281.7 L 351.0,298.0 L 322.0,287.3 L 303.4,286.8 L 303.4,286.8 L 307.2,304.9 L 322.8,331.6 L 308.3,343.8 L 284.7,323.8 L 267.5,316.9 L 267.5,316.9 L 264.8,335.3 L 270.3,365.7 L 252.6,372.1 L 237.3,345.3 L 223.4,332.9 L 223.4,332.9 L 214.6,349.3 L 209.4,379.8 L 190.6,379.8 L 185.4,349.3 L 176.6,332.9 L 176.6,332.9 L 162.7,345.3 L 147.4,372.1 L 129.7,365.7 L 135.2,335.3 L 132.5,316.9 L 132.5,316.9 L 115.3,323.8 L 91.7,343.8 L 77.2,331.6 L 92.8,304.9 L 96.6,286.8 L 96.6,286.8 L 78.0,287.3 L 49.0,298.0 L 39.6,281.7 L 63.4,262.0 L 73.1,246.2 L 73.1,246.2 L 55.5,240.3 L 24.6,240.5 L 21.3,221.9 L 50.4,211.5 L 65.0,200.0 L 65.0,200.0 L 50.4,188.5 L 21.3,178.1 L 24.6,159.5 L 55.5,159.7 L 73.1,153.8 L 73.1,153.8 L 63.4,138.0 L 39.6,118.3 L 49.0,102.0 L 78.0,112.7 L 96.6,113.2 L 96.6,113.2 L 92.8,95.1 L 77.2,68.4 L 91.7,56.2 L 115.3,76.2 L 132.5,83.1 L 132.5,83.1 L 135.2,64.7 L 129.7,34.3 L 147.4,27.9 L 162.7,54.7 L 176.6,67.1 L 176.6,67.1 L 185.4,50.7 L 190.6,20.2 L 209.4,20.2 L 214.6,50.7 L 223.4,67.1 L 223.4,67.1 L 237.3,54.7 L 252.6,27.9 L 270.3,34.3 L 264.8,64.7 L 267.5,83.1 L 267.5,83.1 L 284.7,76.2 L 308.3,56.2 L 322.8,68.4 L 307.2,95.1 L 303.4,113.2 L 303.4,113.2 L 322.0,112.7 L 351.0,102.0 L 360.4,118.3 L 336.6,138.0 L 326.9,153.8 L 326.9,153.8 L 344.5,159.7 L 375.4,159.5 L 378.7,178.1 L 349.6,188.5 L 335.0,200.0 Z"
+                        fill="rgba(4, 20, 33, 0.85)" stroke="var(--storm-teal)" stroke-width="2.5"
+                        stroke-linejoin="round" />
+                    <!-- Pitch Guideline -->
+                    <circle cx="200" cy="200" r="150" fill="none" stroke="#48e5c2" stroke-width="1.2"
+                        stroke-dasharray="4, 4" opacity="0.45" />
+                    <!-- Inner Rim -->
+                    <circle cx="200" cy="200" r="118" fill="none" stroke="var(--storm-slate)" stroke-width="2"
+                        opacity="0.6" />
+                    <!-- Spoke Cutouts -->
+                    <circle cx="288.0" cy="200.0" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="288.0" cy="200.0" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <circle cx="244.0" cy="276.2" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="244.0" cy="276.2" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <circle cx="156.0" cy="276.2" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="156.0" cy="276.2" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <circle cx="112.0" cy="200.0" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="112.0" cy="200.0" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <circle cx="156.0" cy="123.8" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="156.0" cy="123.8" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <circle cx="244.0" cy="123.8" r="22" fill="none" stroke="var(--storm-teal)" stroke-width="1.8"
+                        opacity="0.7" />
+                    <circle cx="244.0" cy="123.8" r="3.5" fill="#48e5c2" opacity="0.85" />
+                    <!-- Center Hub -->
+                    <circle cx="200" cy="200" r="45" fill="rgba(4, 20, 33, 0.95)" stroke="var(--storm-teal)"
+                        stroke-width="2.2" />
+                    <circle cx="200" cy="200" r="32" fill="none" stroke="#48e5c2" stroke-width="1" opacity="0.5" />
+                    <!-- Center Axle -->
+                    <circle cx="200" cy="200" r="20" fill="rgba(72, 229, 194, 0.2)" stroke="#48e5c2" stroke-width="2" />
+                    <circle cx="200" cy="200" r="7" fill="#48e5c2" />
+                </svg>
             </div>
-
-
-            <!-- Other interests -->
-
-            <div class="media-section">
-
-                <h3>Other Interests</h3>
-
-                <div class="tag-list">
-
-                    <span>Music</span>
-                    <span>Books</span>
-                    <span>Story Books</span>
-                    <span>Psycho-thriller Movies</span>
-                    <span>Image Editing</span>
-                    <span>Mandalas</span>
-                    <span>Creative Works</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Vibe Coding -->
-
-            <div class="vibe-coding">
-
-                <h3>Vibe Coding</h3>
-
-                <p>
-                    Sometimes I just vibe-code and see where the idea takes me.
-                </p>
-
-            </div>
-
         </section>
 
 
-        <!-- ==================== CONTACT ==================== -->
+        <!-- ==================== 04 ACHIEVEMENTS ==================== -->
+        <section id="achievements">
+            <div class="container">
 
+                <div class="section-header">
+                    <span class="section-tag">Honors</span>
+                    <h2 class="section-title">Remarkable Achievements</h2>
+                    <p class="section-subtitle">National and global challenges testing combinatorial logic and
+                        perseverance.</p>
+                </div>
+
+                <div class="achievements-grid">
+
+                    <!-- Bangladesh Math Olympiad -->
+                    <article class="achievement-card">
+                        <div>
+                            <div class="achievement-header">
+                                <span class="achievement-year-badge">2019</span>
+                                <span style="color:var(--storm-teal); font-weight:600;">National Level</span>
+                            </div>
+
+                            <h3 class="achievement-title">Bangladesh Mathematical Olympiad</h3>
+                            <p class="achievement-level">National Level Competition</p>
+                            <p style="color:var(--text-secondary); margin-bottom: 24px; font-size: 0.96rem;">
+                                Solved complex proof-based and combinatorial math problems under intense national
+                                competition conditions.
+                            </p>
+                        </div>
+
+                        <div class="achievement-rank-box">
+                            <strong>2nd Runner-up</strong>
+                            <span>National Honor</span>
+                        </div>
+                    </article>
+
+                    <!-- International Youth Math Challenge -->
+                    <article class="achievement-card">
+                        <div>
+                            <div class="achievement-header">
+                                <span class="achievement-year-badge">2020</span>
+                                <span style="color:var(--storm-teal); font-weight:600;">Global Finals</span>
+                            </div>
+
+                            <h3 class="achievement-title">International Youth Math Challenge</h3>
+                            <p class="achievement-level">Finalist • Silver Honour</p>
+                            <p style="color:var(--text-secondary); margin-bottom: 24px; font-size: 0.96rem;">
+                                Qualified through multiple international evaluation rounds against participants from
+                                over 100 countries.
+                            </p>
+                        </div>
+
+                        <div class="achievement-rank-box">
+                            <strong>Top 7% Globally</strong>
+                            <span>Silver Honour</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== 05 HOBBIES ==================== -->
+        <section id="hobbies">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-tag">
+                        <svg class="pixel-icon" width="13" height="13" viewBox="0 0 16 16" fill="currentColor"
+                            style="shape-rendering:crispEdges; margin-right:4px;">
+                            <path
+                                d="M2 4h3v2H2zM5 2h2v2H5zM7 4h2v2H7zM9 2h2v2H9zM11 4h3v2h-3zM1 6h14v3H1zM2 9h12v2H2zM4 11h8v2H4zM6 13h4v2H6z" />
+                        </svg>
+                        Hobbies
+                    </span>
+                    <h2 class="section-title">Games & Interests</h2>
+                    <p class="section-subtitle">Personal in-game captures from favorite games, anime inspirations, and
+                        creative hobbies.</p>
+                </div>
+
+                <!-- Games Played Chips -->
+                <div class="played-games-container">
+                    <div style="margin-bottom: 24px;">
+                        <h3 class="subgroup-heading">
+                            <svg class="pixel-icon" width="20" height="20" viewBox="0 0 16 16" fill="var(--storm-teal)"
+                                style="shape-rendering:crispEdges;">
+                                <path
+                                    d="M3 3h10v2H3zM1 5h14v6H1zM2 11h3v2H2zM11 11h3v2h-3zM4 6h2v4H4zM3 7h4v2H3zM10 7h2v2h-2zM12 9h2v2h-2z" />
+                            </svg>
+                            Games Played
+                        </h3>
+                    </div>
+                    <div class="played-games-chips">
+                        <button class="game-chip" data-game-target="resident-evil">Resident Evil</button>
+                        <button class="game-chip" data-game-target="god-of-war">God of War</button>
+                        <button class="game-chip" data-game-target="stellar-blade">Stellar Blade</button>
+                        <button class="game-chip" data-game-target="control">Control</button>
+                        <button class="game-chip" data-game-target="silent-hill">Silent Hill</button>
+                        <button class="game-chip" data-game-target="the-last-of-us">The Last of Us</button>
+                        <button class="game-chip" data-game-target="a-plague-tale">A Plague Tale</button>
+                        <button class="game-chip" data-game-target="pragmata">Pragmata</button>
+                        <button class="game-chip" data-game-target="black-myth-wukong">Black Myth Wukong</button>
+                        <button class="game-chip" data-game-target="hellblade">Hellblade</button>
+                        <button class="game-chip" data-game-target="metal-gear-solid">Metal gear solid</button>
+                        <button class="game-chip" data-game-target="tomb-raider">Rise of the Tomb Raider</button>
+                        <button class="game-chip" data-game-target="dead-space">Dead Space</button>
+                        <button class="game-chip" data-game-target="cronos">Cronos the new dawn</button>
+                    </div>
+                </div>
+
+                <!-- Clean Cinematic Screenshot Slider -->
+                <div class="slider-container">
+                    <div class="slider-viewport">
+                        <img src="assets/game screenshots/Genshin Impact Screenshot 2026.03.11 - 19.17.24.68.png"
+                            alt="In-Game Capture" class="slider-image" id="slider-img">
+
+                        <button class="slider-nav-btn slider-prev" id="slider-prev-btn"
+                            aria-label="Previous Screenshot">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <button class="slider-nav-btn slider-next" id="slider-next-btn" aria-label="Next Screenshot">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+
+                        <div class="slider-hud">
+                            <div class="slider-info">
+                                <div class="slider-meta-row">
+                                    <span class="slider-counter" id="slider-counter">01 / 11</span>
+                                    <span class="slider-tag" id="slider-tag">Regularly Played</span>
+                                </div>
+                                <h3 class="slider-title" id="slider-title">Genshin Impact</h3>
+                                <p class="slider-desc" id="slider-desc">
+                                    Open-world elemental exploration and combat mechanics across Teyvat.
+                                </p>
+                            </div>
+
+                            <div class="slider-actions">
+                                <button class="btn-inspect-capture" id="slider-inspect-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <polyline points="9 21 3 21 3 15"></polyline>
+                                        <line x1="21" y1="3" x2="14" y2="10"></line>
+                                        <line x1="3" y1="21" x2="10" y2="14"></line>
+                                    </svg>
+                                    Inspect 1080p Capture
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Indicator Dots -->
+                    <div class="slider-dots" id="slider-dots"></div>
+                </div>
+
+                <!-- Anime Poster Cards -->
+                <div style="margin-bottom: 24px;">
+                    <h3 class="subgroup-heading">
+                        <svg class="pixel-icon" width="20" height="20" viewBox="0 0 16 16" fill="var(--storm-teal)"
+                            style="shape-rendering:crispEdges;">
+                            <path d="M2 3h12v3H2zM2 7h12v6H2zM4 4h2v1H4zM8 4h2v1H8zM12 4h2v1h-2zM5 9h6v3H5z" />
+                        </svg>
+                        Anime Watched
+                    </h3>
+                </div>
+
+                <div class="anime-posters-grid">
+                    <!-- Devil May Cry -->
+                    <article class="anime-poster-card">
+                        <div class="anime-poster-frame">
+                            <img src="https://www.gamereactor.eu/media/66/devilmaycry_4496653b.jpg"
+                                alt="Devil May Cry Anime Poster" class="anime-poster-img" loading="lazy">
+                            <span class="anime-poster-badge">Favorite</span>
+                        </div>
+                        <div class="anime-poster-info">
+                            <h4 class="anime-poster-title">Devil May Cry</h4>
+                            <span class="anime-poster-genre">Supernatural Action • Stylish Combat</span>
+                        </div>
+                    </article>
+
+                    <!-- Demon Slayer -->
+                    <article class="anime-poster-card">
+                        <div class="anime-poster-frame">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMWU1OGEwNmQtNGM3MS00YTYyLThmYmMtN2FjYzQzNzNmNTE0XkEyXkFqcGc@._V1_.jpg"
+                                alt="Demon Slayer Anime Poster" class="anime-poster-img" loading="lazy">
+                            <span class="anime-poster-badge">Watched</span>
+                        </div>
+                        <div class="anime-poster-info">
+                            <h4 class="anime-poster-title">Demon Slayer</h4>
+                            <span class="anime-poster-genre">Dark Fantasy • Kinetic Animation & Art</span>
+                        </div>
+                    </article>
+
+                    <!-- Cyberpunk: Edgerunners -->
+                    <article class="anime-poster-card">
+                        <div class="anime-poster-frame">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Cyberpunk_Edgerunners_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+                                alt="Cyberpunk: Edgerunners Anime Poster" class="anime-poster-img" loading="lazy">
+                            <span class="anime-poster-badge">Masterpiece</span>
+                        </div>
+                        <div class="anime-poster-info">
+                            <h4 class="anime-poster-title">Cyberpunk: Edgerunners</h4>
+                            <span class="anime-poster-genre">Cyberpunk Tragedy • Studio Trigger</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Separate Floating Boxes for Other Interests -->
+                <div style="margin-bottom: 24px;">
+                    <h3 class="subgroup-heading">
+                        <svg class="pixel-icon" width="20" height="20" viewBox="0 0 16 16" fill="var(--storm-teal)"
+                            style="shape-rendering:crispEdges;">
+                            <path
+                                d="M7 1h2v4H7zM7 11h2v4H7zM1 7h4v2H1zM11 7h4v2h-4zM6 6h4v4H6zM5 5h1v1H5zM10 5h1v1h-1zM5 10h1v1H5zM10 10h1v1h-1z" />
+                        </svg>
+                        Other Interests
+                    </h3>
+                </div>
+
+                <div class="floating-interests-grid">
+                    <!-- Floating Box 1: Piano & Harmonium -->
+                    <div class="interest-float-box">
+                        <div class="interest-float-header">
+                            <div class="interest-pixel-icon">
+                                <svg class="pixel-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges;">
+                                    <path d="M6 2h7v2H6zM6 4h2v7H6zM11 4h2v5h-2zM3 9h4v4H3zM9 7h4v4H9z" />
+                                </svg>
+                            </div>
+                            <h4 class="interest-float-title">Piano & Harmonium</h4>
+                        </div>
+                        <p class="interest-float-detail">Formal training, playing melodies & classical instruments.</p>
+                    </div>
+
+                    <!-- Floating Box 2: Books & Story Books -->
+                    <div class="interest-float-box">
+                        <div class="interest-float-header">
+                            <div class="interest-pixel-icon">
+                                <svg class="pixel-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges;">
+                                    <path d="M2 3h12v10H2zM3 4h4v8H3zM9 4h4v8H9zM7 4h2v8H7zM1 13h14v2H1z" />
+                                </svg>
+                            </div>
+                            <h4 class="interest-float-title">Story Books</h4>
+                        </div>
+                        <p class="interest-float-detail">Immersive reading, plot structures, and fiction world-building.
+                        </p>
+                    </div>
+
+                    <!-- Floating Box 3: Psycho-Thriller Movies -->
+                    <div class="interest-float-box">
+                        <div class="interest-float-header">
+                            <div class="interest-pixel-icon">
+                                <svg class="pixel-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges;">
+                                    <path d="M2 3h12v3H2zM2 7h12v6H2zM4 4h2v1H4zM8 4h2v1H8zM12 4h2v1h-2zM5 9h6v3H5z" />
+                                </svg>
+                            </div>
+                            <h4 class="interest-float-title">Psycho-Thriller Movies</h4>
+                        </div>
+                        <p class="interest-float-detail">Suspense, psychological tension, and dark narrative themes.</p>
+                    </div>
+
+                    <!-- Floating Box 4: Mandalas & Image Editing -->
+                    <div class="interest-float-box">
+                        <div class="interest-float-header">
+                            <div class="interest-pixel-icon">
+                                <svg class="pixel-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"
+                                    style="shape-rendering:crispEdges;">
+                                    <path
+                                        d="M4 2h8v2H4zM2 4h12v6H2zM4 10h8v2H4zM6 12h4v2H6zM4 5h2v2H4zM7 5h2v2H7zM10 5h2v2h-2zM4 8h2v1H4z" />
+                                </svg>
+                            </div>
+                            <h4 class="interest-float-title">Visual Editing</h4>
+                        </div>
+                        <p class="interest-float-detail">Enjoy designing mandalas, editing images and experimenting with
+                            aesthetic visual ideas.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== 06 VIBE CODING CONSOLE ==================== -->
+        <section id="terminal">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-tag">Interactive</span>
+                    <h2 class="section-title">Vibe Coding Terminal</h2>
+                    <p class="section-subtitle">Type commands or click quick prompt buttons below to interact with the
+                        console.</p>
+                </div>
+
+
+                <div class="terminal-wrapper">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="tdot"></span>
+                            <span class="tdot"></span>
+                            <span class="tdot"></span>
+                        </div>
+                        <div class="terminal-title">asr@iut-workstation: ~/vibe-coding (bash)</div>
+                    </div>
+
+                    <div class="terminal-body" id="terminal-body-content">
+                        <div class="terminal-output">
+                            <p style="color:var(--storm-teal)">ASR Portfolio Interactive Terminal [v3.1.0]</p>
+                            <p>Type <span style="color:var(--storm-highlight)">'help'</span> for available commands or
+                                click the chips below.</p>
+                        </div>
+                    </div>
+
+                    <div class="terminal-quick-chips">
+                        <span>Prompts:</span>
+                        <button class="tchip" data-cmd="about">about</button>
+                        <button class="tchip" data-cmd="projects">projects</button>
+                        <button class="tchip" data-cmd="hobbies">hobbies</button>
+                        <button class="tchip" data-cmd="skills">skills</button>
+                        <button class="tchip" data-cmd="music">music</button>
+                        <button class="tchip" data-cmd="achievements">achievements</button>
+                        <button class="tchip" data-cmd="clear">clear</button>
+                    </div>
+
+                    <div class="terminal-input-bar">
+                        <span class="terminal-prompt">asr@iut:~$ &nbsp;</span>
+                        <input type="text" id="terminal-cmd-input" class="terminal-input"
+                            placeholder="Type a command ('help', 'projects', 'about')..." autocomplete="off"
+                            spellcheck="false">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== 07 CONTACT ==================== -->
         <section id="contact">
+            <div class="container">
 
-            <div class="section-heading">
-                <p>06</p>
-                <h2>Let's Connect</h2>
+                <div class="contact-card-container">
+                    <span class="section-tag">Contact</span>
+
+                    <h2 class="contact-title"></h2>
+                    <p class="Typing-subtitle"><span class="typing-text">Let's Connect</span><span class="typing-cursor"
+                            aria-hidden="true">_</span></p>
+                    <p class="contact-desc">
+                        Interested in my game development work, creative projects, or want to say hello? Reach out
+                        directly.
+                    </p>
+
+                    <div class="contact-links-grid">
+
+                        <a href="https://github.com/ASR-jadespear" target="_blank" rel="noopener noreferrer"
+                            class="connect-btn">
+                            GitHub ↗
+                        </a>
+
+                        <a href="https://bd.linkedin.com/in/abu-sayeem-rafi-28a465393" target="_blank"
+                            rel="noopener noreferrer" class="connect-btn">
+                            LinkedIn ↗
+                        </a>
+
+                        <a href="https://instagram.com/asr_jadespear" target="_blank" rel="noopener noreferrer"
+                            class="connect-btn">
+                            Instagram ↗
+                        </a>
+
+                        <a href="https://facebook.com/abusayeem.rafi.1" target="_blank" rel="noopener noreferrer"
+                            class="connect-btn">
+                            Facebook ↗
+                        </a>
+
+                        <a href="mailto:abusayeemrafi@gmail.com" class="connect-btn">
+                            Email Directly ↗
+                        </a>
+
+                    </div>
+
+                    <!-- Copy Email to Clipboard Bar -->
+                    <div class="copy-email-bar" id="copy-email-bar" title="Click to copy email address">
+                        <span>📧 abusayeemrafi@gmail.com</span>
+                        <span
+                            style="font-size:0.75rem; border:1px solid var(--border-color); padding:2px 8px; border-radius:10px;">Click
+                            to copy</span>
+                    </div>
+
+                </div>
+
             </div>
-
-            <p class="contact-introduction">
-                Interested in my work, games, creative projects or just want
-                to say hello? Find me here.
-            </p>
-
-            <div class="contact-links">
-
-                <a href="https://github.com/ASR-jadespear" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-                <a href="https://instagram.com/asr_jadespear" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-
-                <a href="https://facebook.com/abusayeem.rafi.1" target="_blank" rel="noopener noreferrer">
-                    Facebook
-                </a>
-
-                <a href="https://www.linkedin.com/in/abu-sayeem-rafi-28a465393/" target="_blank"
-                    rel="noopener noreferrer">
-                    Linkedin
-                </a>
-
-                <a href="abusayeemrafi@gmail.com" target="_blank" rel="noopener noreferrer">
-                    Email
-                </a>
-
-            </div>
-
         </section>
+
+
+
 
     </main>
 
 
+    <!-- ==================== FULLSCREEN SCREENSHOT LIGHTBOX ==================== -->
+    <dialog id="screenshot-lightbox">
+        <div class="lightbox-header">
+            <div class="lightbox-meta">
+                <span class="lightbox-title" id="lightbox-title">In-Game Capture</span>
+                <span class="lightbox-badge" id="lightbox-meta">1080P</span>
+            </div>
+            <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Fullscreen View">✕</button>
+        </div>
+        <div class="lightbox-body">
+            <img src="" alt="Full Resolution Capture" id="lightbox-img" class="lightbox-full-img">
+        </div>
+    </dialog>
+
+
+    <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+    <dialog id="project-modal">
+        <div class="modal-header">
+            <img src="" alt="Project Visual Preview" id="modal-img">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Project Preview">✕</button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-category" id="modal-category">Game Development</div>
+            <h3 class="modal-title" id="modal-title">Project Title</h3>
+            <p class="modal-description" id="modal-desc">Detailed project description goes here.</p>
+            <div class="project-tags" id="modal-tags" style="margin-bottom: 24px;"></div>
+            <div class="modal-actions">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" id="modal-github-link">
+                    Open on GitHub →
+                </a>
+            </div>
+        </div>
+    </dialog>
+
+
     <!-- ==================== FOOTER ==================== -->
-
     <footer>
-
-        <p>
-            © 2026 Abu Sayeem Rafi
-        </p>
-
-        <p>
-            ASR
-        </p>
-
+        <div class="footer-content">
+            <div>
+                © <span id="current-year">2026</span> Abu Sayeem Rafi • Rajshahi, Bangladesh
+            </div>
+            <div class="footer-asr">
+                <span class="storm-gradient-text">ASR</span> • Portfolio
+            </div>
+        </div>
     </footer>
 
-
-    <script src="js/script.js"></script>
+    <!-- Main JavaScript Engine -->
+    <script src="js/script.js?v=3.8"></script>
 
 </body>
+
+</html>
