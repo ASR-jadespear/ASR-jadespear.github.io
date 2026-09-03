@@ -1376,7 +1376,8 @@ function initTypingSubtitle() {
     const phrases = [
         "Struggling is a Constant",
         "Efforts matters...",
-        "Don't crave the throne, but know when you must adorn it"
+        "Don't crave the throne...",
+        "...but know when you must adorn it"
     ];
 
     let phraseIndex = 0;
